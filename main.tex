@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[utf8]{inputenc}
+
+\title{CODER POUR LA VR: Rapport de Manipulation}
+\author{Ayolo Ayolo Emmanuel 20p054 AIA4}
+\date{March 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{INTRODUCTION }
+DAns le cadre du cours coder pour la VR nous avons abordé la Notion de  périphériques d’interface humaine (HID) qui sont une définition de classe de périphérique qui remplace les connecteurs de style PS/2 par un pilote USB générique pour prendre en charge les périphériques HID tels que les claviers, les souris, les contrôleurs de jeu. il sera doc question pour Nous dans ce document de développer une interface graphique d'interaction avec un equipement de notre choix, dans le but de mieux comprendre certaine notions abordé dans le cours et notament celle de \textbf{EVENEMENT}.
+
+\section{I - Methodologie et Technologies  }
+\subsection {Technologie}
+pour la réalisation de notre interface, nous avons utilisé un ensemble d'elements:
+\subsubsection {Pygame}
+
+Pygame  est une bibliothèque bien connue chez les développeurs python, déjà parce que :\\
+— c’est un binding1 de la SDL 1.2 en C (et la SDL est très connue et utilisée !)\\
+— c’est une bibliothèque qui permet de coder des jeux (entre autres), car :\\
+— elle permet d’afficher des images\\
+— de jouer des musiques\\
+— de faire du ”pixel perfect” avec son module mask\\
+— d’écrire du texte dans vos jeux, par exemple un dialogue entre deux personnages\\
+— de créer des images de toutes pièces et de les enregistrer\\
+— de faire des dessins, et encore pleins d’autres choses !\\ 
+la commande pour installer pygame dans le terminale de notre  machine est \textbf{PIP install pygame !}
+\subsubsection  { IDE Pycharm}
+PyCharm est un environnement de développement intégré (IDE) spécialement conçu pour la programmation en Python. Il est développé par JetBrains et est largement utilisé par les développeurs Python professionnels.\\
+
+PyCharm offre un large éventail de fonctionnalités pour faciliter le développement Python: \\
+\begin{itemize}
+     \item \textbf{Éditeur de code avancé }: PyCharm propose un éditeur de code intelligent avec des fonctionnalités telles que la coloration syntaxique, l'indentation automatique, la complétion de code, la refactorisation, la navigation rapide entre les fichiers et les classes, les suggestions de code.\\
+     \item \textbf{Débogage }: PyCharm offre un débogueur intégré qui permet aux développeurs de mettre des points d'arrêt, d'exécuter le code pas à pas, d'inspecter les variables, d'évaluer les expressions, de suivre l'exécution du programme,\\
+      \item \textbf{Gestion de projet }: PyCharm facilite la création et la gestion de projets Python. Il prend en charge différents systèmes de gestion de versions tels que Git, Mercurial et Subversion. Il offre également des outils pour gérer les dépendances avec des gestionnaires de packages comme pip et conda.\\
+
+     \item T\textbf{ests unitaires }: PyCharm intègre des outils pour l'écriture et l'exécution de tests unitaires. Il permet de créer des configurations de test, d'exécuter des tests individuels ou de l'ensemble du projet, et de visualiser les résultats des tests.\\
+    \item \textbf{Intégration d'outils externes }: PyCharm peut être intégré à d'autres outils populaires tels que Jupyter Notebook, IPython, Docker, Vagrant, etc. Cela permet aux développeurs d'étendre les fonctionnalités de l'IDE en utilisant des outils tiers.\\
+    \item pycharm est disponible sur le site {www.jetbrains.com} sous deux formats: le format entreprise et format community, dans le cadre de ce projet nous avon utiliser la version community pour la simple raison que elle est gratuite et dispose d'une grande communoté de developpeurs au tour ce qui facilite les recherche en cas de problémes.
+\end{itemize}    
+\subsection {Méthodologie}
+Notre interface a été defini comme suit
+\begin{enumerate}
+    \item creation de la fenertre de 600*600
+\end{enumerate}
+ \begin{enumerate}
+     \item on nomme notre fenertre
+     \item on creer les variable de police et de fond
+     \item on etabli notre boucle infini qui va permetre de maintenir notre fenertre ouverte
+      \item on capture les evenement du clavier avec la methode \textbf{event.unicode}
+      \item Puis on affiche les touches exécuteur à l'ecran.
+ \end{enumerate}
+
+\section{ Difficultés rencontré}
+lord de la capture des évènements nous avons choisi comme HID le clavier la capture des evenement est bonne sauf que cetaines touche commme Delete, ctrl et toutes les autres touches du meme type ne s'affichent pas à l'ecran.
+
+
+\end{document}
+
+
+
+
